@@ -38,7 +38,7 @@
     "title": "lorem ipaum dolor sit",
     "price": 500,
     "category":"Horror",
-    "image":"../villa.jpg"
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1716458568~exp=1716462168~hmac=298ec513a045eb8ff808e0d9af1ee2af7b0d89cc22156fa660e07cc3b822d5ef&w=996"
 },
 
 {
@@ -47,7 +47,7 @@
     "title": "lorem ipaum dolor sit",
     "price": 300,
     "category":"Comedy",
-    "image":"../comedy.jpg"
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1716458568~exp=1716462168~hmac=298ec513a045eb8ff808e0d9af1ee2af7b0d89cc22156fa660e07cc3b822d5ef&w=996"
 },
 
 {
