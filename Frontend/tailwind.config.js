@@ -4,12 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode:"class",
+  darkMode: "class", // Enables class-based dark mode
   theme: {
     extend: {},
   },
   plugins: [
     require('daisyui'),
   ],
-}
-
+  daisyui: {
+    themes: ["light", "dark"], // Ensure both themes are available
+  },
+};
