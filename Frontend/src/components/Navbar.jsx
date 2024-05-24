@@ -90,7 +90,7 @@ function Navbar() {
   
 </label>
   <div className="">
-    <a className="btn bg-pink-500 text-white rounded-lg dark:border-none hover:scale-105 hover:text-black dark:hover:text-black dark:hover:bg-pink-300" onClick={()=> document.getElementById("my_modal_3").showModal()}>Login</a>
+    <a className="btn bg-pink-500 text-white rounded-lg dark:border-none hover:scale-105  hover:text-black hover:bg-pink-300" onClick={()=> document.getElementById("my_modal_3").showModal()}>Login</a>
     <Login/>
   </div>
   

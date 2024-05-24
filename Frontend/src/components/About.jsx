@@ -20,7 +20,7 @@ function About() {
                 <span className='text-pink-500 font-bold'x>Happy reading!</span>
                 </p>
             </div>
-            <a href="/"><button className="btn bg-pink-500 text-white dark:border-none mt-6 mb-5 hover:scale-105 hover:text-black hover:duration-300 dark:hover:text-black dark:hover:bg-pink-300">Back</button></a>
+            <a href="/"><button className="btn bg-pink-500 text-white dark:border-none mt-6 mb-5 hover:scale-105 hover:text-black hover:bg-pink-300">Back</button></a>
         </div>
         
       

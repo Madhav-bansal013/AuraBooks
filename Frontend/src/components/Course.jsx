@@ -11,7 +11,7 @@ function Course() {
         <p className='mt-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptatibus dignissimos, nesciunt tempore expedita laudantium similique, numquam dolore quasi perspiciatis debitis accusantium iste. Autem odit, magni sapiente molestiae est soluta!</p>
         
         <Link to="/">
-          <button className='btn bg-pink-500 text-white px-4 py-2 mt-8 rounded-lg hover:scale-105 dark:hover:text-black dark:hover:bg-pink-300 hover:text-black dark:border-none'>Back</button>
+          <button className='btn bg-pink-500 text-white px-4 py-2 mt-8 rounded-lg hover:scale-105 hover:text-black hover:bg-pink-300 dark:border-none'>Back</button>
         </Link>
       </div>
 
