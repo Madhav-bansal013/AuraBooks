@@ -1,11 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Login from './Login'
 import { useForm } from "react-hook-form"
 import axios from "axios" //it is use to send req to db
 import toast from 'react-hot-toast';
 
 function Signup() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname  || "/"; //it is used to redirect signup page to home page after success signup
+
+
   const {
     register,
     handleSubmit,
@@ -24,6 +29,10 @@ function Signup() {
       console.log(res.data);
       if(res.data){
         toast.success("Signup Successfully")
+        navigate(from , {replace:true});
+        setTimeout(()=>{
+          window.location.reload()
+        } , 500)
       }
       localStorage.setItem("Users", JSON.stringify(res.data.user)) //converts a JavaScript object to a JSON string because from backend it was coming in object form
 

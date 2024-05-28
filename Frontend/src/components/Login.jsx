@@ -23,13 +23,18 @@ function Login() {
       console.log(res.data);
       if(res.data){
         toast.success("Login Successfull")
+        document.getElementById("my_modal_3").close()
+        setTimeout(()=> {
+          window.location.reload()
+          localStorage.setItem("Users", JSON.stringify(res.data.user)) //converts a JavaScript object to a JSON string because from backend it was coming in object form
+        }, 500)
       }
-      localStorage.setItem("Users", JSON.stringify(res.data.user)) //converts a JavaScript object to a JSON string because from backend it was coming in object form
 
     }).catch((err)=>{
       if(err.response){
         console.log(err);
         toast.error("Error: " + err.response.data.message)
+        setTimeout(()=>{} , 3000)
       }
     })
   }
