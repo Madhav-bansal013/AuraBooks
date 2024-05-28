@@ -1,5 +1,5 @@
 
-# AuraBooks Backend
+# AURABOOKS
 
 AuraBooks is a MERN stack project for managing bookstore Website. This project is built using React , Node.js, Express, MongoDB and Tailwind for styling.
 
@@ -39,10 +39,9 @@ For Backend:
 
 ### Configuration
 
-1. Create a `.env` file in the root of your project:
-   
-    MONG_URI="your mongo connection string"
-    PORT=4000
+Create a `.env` file in the root of your project:
+    - MONG_URI="your mongo connection string"
+    - PORT=4000
 
 ### Running the Application
 
