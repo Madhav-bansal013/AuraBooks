@@ -23,7 +23,7 @@ function Logout() {
     }
   return (
     <div>
-      <button className='px-3 py-2 cursor-pointer bg-red-600 rounded-md text-white' onClick={handlelogout}>Logout</button>
+      <button className='btn px-3 py-2 cursor-pointer bg-red-600 rounded-lg text-white dark:border-none hover:scale-105  hover:text-black hover:bg-red-300' onClick={handlelogout}>Logout</button>
     </div>
   )
 }
