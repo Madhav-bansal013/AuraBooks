@@ -60,7 +60,7 @@ function Freebook() {
     <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
         <div>
             <h1 className='font-semibold text-xl pb-2'>Free Offered Courses</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error magnam veniam accusantium, rerum distinctio, quo perferendis neque quos libero obcaecati officiis sapiente quisquam tenetur sunt, commodi aut laudantium ducimus!
+            <p>Explore our free courses at AuraBooks, designed to enhance your literary journey. Dive into a variety of topics and sharpen your reading and writing skills, all at no cost!
             </p>
         </div>
     
