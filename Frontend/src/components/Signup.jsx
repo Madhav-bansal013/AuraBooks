@@ -4,6 +4,8 @@ import Login from './Login'
 import { useForm } from "react-hook-form"
 import axios from "axios" //it is use to send req to db
 import toast from 'react-hot-toast';
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 function Signup() {
   const location = useLocation();
@@ -46,6 +48,7 @@ function Signup() {
 
   return (
     <>
+    <Navbar/>
      <div className='flex h-screen items-center justify-center dark:bg-slate-900 dark:text-white'>
      <div className="w-[600px]">
   <div className="modal-box dark:bg-slate-800   dark:text-white">
@@ -82,28 +85,6 @@ function Signup() {
     {...register("password", { required: true })}/>
     {errors.password && <span className='text-[12px] text-red-600'>*Required</span>}
     </label>
-
-    
-    {/* <div className='mt-4 space-y-2'>
-        <span>Name</span>
-        <br />
-        <input type="text" placeholder='Enter your fullname' className='w-80 px-3 py-1 border rounded-md outline-none'/>
-    </div>
-
-    <div className='mt-4 space-y-2'>
-        <span>Email</span>
-        <br />
-        <input type="email" placeholder='Enter your email' className='w-80 px-3 py-1 border rounded-md outline-none'/>
-    </div> */}
-    {/*password*/}
-    {/* <div className='mt-4 space-y-2'>
-        <span>Password</span>
-        <br />
-        <input type="password" placeholder='Enter your password' className='w-80 px-3 py-1 border rounded-md outline-none'/>
-    </div> */}
-
-    {/*buttons*/}
-
     <div className='flex justify-around mt-4'>
         <button className='bg-pink-500 w-15 h-10 text-white px-3 py-1 mx-5 md:mx-0 rounded-md hover:bg-pink-700 duration-300'>Signup</button>
         <p className='text-xl'>Already registered? <button className='underline text-blue-800 cursor-pointer' onClick={()=>document.getElementById("my_modal_3").showModal()}>Login</button></p>
@@ -113,6 +94,8 @@ function Signup() {
   </div>
 </div>
         </div> 
+
+        <Footer/>
     </>
   )
 }
