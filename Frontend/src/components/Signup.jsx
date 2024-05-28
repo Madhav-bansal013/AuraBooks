@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Login from './Login'
 import { useForm } from "react-hook-form"
+import axios from "axios" //it is use to send req to db
+import toast from 'react-hot-toast';
 
 function Signup() {
   const {
@@ -10,7 +12,28 @@ function Signup() {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = async (data) => {
+    const userInfo = {
+      fullname : data.fullname ,
+      email: data.email,
+      password: data.password
+    }
+    // await axios.post("http://localhost:4000/user/signup" ,userInfo)
+    await axios.post("https://aurabooks.onrender.com/user/login" ,userInfo)
+    .then((res)=>{
+      console.log(res.data);
+      if(res.data){
+        toast.success("Signup Successfully")
+      }
+      localStorage.setItem("Users", JSON.stringify(res.data.user)) //converts a JavaScript object to a JSON string because from backend it was coming in object form
+
+    }).catch((err)=>{
+      if(err.response){
+        console.log(err);
+        toast.error("Error: " + err.response.data.message)
+      }
+    })
+  }
 
   return (
     <>
@@ -36,9 +59,9 @@ function Signup() {
 
     <label className="input input-bordered flex items-center gap-2 mt-4 space-y-2">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
-    <input type="text" className="grow w-10" placeholder="Username"
-    {...register("username", { required: true })}/>
-    {errors.username && <span className='text-[12px] text-red-600'>*Required</span>}
+    <input type="text" className="grow w-10" placeholder="Fullname"
+    {...register("fullname", { required: true })}/>
+    {errors.fullname && <span className='text-[12px] text-red-600'>*Required</span>}
     </label>
 
     {/* password */}
