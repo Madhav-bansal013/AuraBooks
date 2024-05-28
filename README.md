@@ -1,14 +1,13 @@
-Certainly! Here's an example of a `README.md` file for your project:
 
 # AuraBooks Backend
 
-AuraBooks is a backend project for managing book information and user authentication. This project is built using Node.js, Express, and MongoDB.
+AuraBooks is a MERN stack project for managing bookstore Website. This project is built using React , Node.js, Express, MongoDB and Tailwind for styling.
 
 ## Features
 
 - User signup with password hashing
-- CRUD operations for books
-- Secure and efficient API design
+- Courses as protected routes
+- Stylish Website using Tailwind
 
 ## Prerequisites
 
@@ -19,16 +18,23 @@ AuraBooks is a backend project for managing book information and user authentica
 ## Getting Started
 
 ### Installation
+For Frontend:
+1. Vite 
+    - npm create vite@latest my-project -- --template react
+    - cd my-project
+2. Tailwind Install
+    - npm install -D tailwindcss postcss autoprefixer
+    - npx tailwindcss init -p
 
+For Backend:
 1. Clone the repository:
 
-    git clone https://github.com/your-username/aurabooks-backend.git
-    cd aurabooks-backend
+    - git clone 'https://github.com/your-username/aurabooks-backend.git'
+    - cd aurabooks-backend
     
 
 2. Install the dependencies:
-  
-    npm install
+    - npm install
   
 
 ### Configuration
@@ -40,17 +46,19 @@ AuraBooks is a backend project for managing book information and user authentica
 
 ### Running the Application
 
-Start the server:
+Start the Frontend server:
+
+npm run dev
+
+Start the Backend server:
 
 npm start
 
 
 
-The server should be running on `http://localhost:4000`.
-
-
 ## Technologies Used
-
+- React
+- Tailwind
 - Node.js
 - Express
 - MongoDB
@@ -59,6 +67,3 @@ The server should be running on `http://localhost:4000`.
 - dotenv
 - CORS
 
-
-
-Make sure to replace `your-username` in the repository URL with your actual GitHub username or the appropriate URL. You may also want to update the license section according to your project's license. This `README.md` provides an overview of the project, setup instructions, and details about the API endpoints.
