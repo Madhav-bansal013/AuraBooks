@@ -13,7 +13,7 @@ AuraBooks is a MERN stack project for managing bookstore Website. This project i
 
 - Node.js installed
 - MongoDB database (local or cloud)
-- NPM or Yarn package manager
+- NPM 
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ For Frontend:
 For Backend:
 1. Clone the repository:
 
-    - git clone 'https://github.com/your-username/aurabooks-backend.git'
+    - git clone 'https://github.com/Madhav-bansal013/AuraBooks.git'
     - cd aurabooks-backend
     
 
@@ -66,3 +66,5 @@ npm start
 - dotenv
 - CORS
 
+# Project Deployed Link
+"https://aura-books.vercel.app/"
